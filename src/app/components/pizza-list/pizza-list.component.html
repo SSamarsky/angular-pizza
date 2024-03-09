@@ -1,0 +1,8 @@
+<div class="container">
+  <div class="item" *ngFor="let pizza of pizzaList">
+    <img [src]="pizza.imageUrl">
+    <h3>{{pizza.title}}</h3>
+    <p>{{pizza.price}} руб</p>
+    <button (click)="redirectTo(pizza.id)">Подробнее</button>
+  </div>
+</div>

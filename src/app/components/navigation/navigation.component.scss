@@ -1,0 +1,17 @@
+nav ul {
+  display: flex;
+  gap: 20px;
+  font-size: 20px;
+
+  & li a {
+    transition: all .2s linear;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.active {
+  text-decoration: underline;
+}
