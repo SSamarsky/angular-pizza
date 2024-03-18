@@ -10,6 +10,7 @@ import { MainComponent } from './components/pages/main/main.component';
 import { CatalogComponent } from './components/pages/catalog/catalog.component';
 import { ErrorComponent } from './components/pages/error/error.component';
 import { PizzaListModule } from './components/pizza-list/pizza-list.module';
+import { RequestService } from './services/request.service';
 
 
 @NgModule({
@@ -27,7 +28,7 @@ import { PizzaListModule } from './components/pizza-list/pizza-list.module';
     AppRoutingModule,
     PizzaListModule
   ],
-  providers: [],
+  providers: [RequestService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
